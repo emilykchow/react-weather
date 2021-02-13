@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {usestate} from 'react';
 import './SearchBar.css';
 
 const SearchBar = ({query, setQuery, search}) => {
@@ -7,7 +7,7 @@ const SearchBar = ({query, setQuery, search}) => {
             <input 
             className='search-input' 
             placeholder='Search...'
-            onChange={e => setQuery(e.target.value)}
+            onChange={(e) => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
             />

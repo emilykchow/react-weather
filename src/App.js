@@ -34,7 +34,7 @@ function App() {
       <SearchBar 
       query={query}
       setQuery={setQuery}
-      search={search()}
+      search={search}
       />
       <Location />
 
