@@ -40,6 +40,7 @@ function App() {
 
       <DisplayInfo 
         weather={weather}
+        query={query}
         
 
       />
