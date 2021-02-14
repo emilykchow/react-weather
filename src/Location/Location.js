@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchBar = ({query, setQuery, search}) => {
+const Location = ({query, setQuery, search}) => {
     return(
         <div className='location-wrapper'>
             location

@@ -5,7 +5,7 @@ import DisplayInfo from './DisplayInfo/DisplayInfo';
 import './App.css';
 
 const api = {
-  key: "7d4ef5d23648c7c62acd3ccfa1a0a30b",
+  key: "c4911c8f7142317342f4e7447b10513f",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -16,7 +16,7 @@ function App() {
 
   const search = (e) => {
     if (e.key === 'Enter') {
-      fetch(`${api.base}weather?q=${query}&appid=${api.key}`)
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then(res=>res.json())
       .then(result => {
         setWeather(result);
@@ -38,7 +38,11 @@ function App() {
       />
       <Location />
 
-      <DisplayInfo />
+      <DisplayInfo 
+        weather={weather}
+        
+
+      />
 
     </div>
   );
