@@ -5,9 +5,8 @@ import './SearchBar.css';
 const SearchBar = ({query, setQuery, search}) => {
     return(
         <div className='search-bar-wrapper'>
-            {/* <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">React Weather Forecast</Navbar.Brand>
-                <Form inline> */}
                 <input 
                     type='text'
                     className='search-input' 
@@ -17,18 +16,7 @@ const SearchBar = ({query, setQuery, search}) => {
                     onKeyPress={search}
                     />
                 {/* <Button onClick={search} variant="outline-info">Search</Button> */}
-                {/* </Form>
-            </Navbar> */}
-            {/* <input 
-            type='text'
-            className='search-input' 
-            placeholder='Search...'
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-            /> */}
-
-
+            </Navbar>
         </div>
     )
 

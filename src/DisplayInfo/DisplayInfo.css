@@ -4,22 +4,24 @@
 
 .coldBg {
     background-image: url('../assets/images/cold-bg.jpg');
-    height: 100vh;
+    height: 90vh;
+    /* background-size: cover; */
 }
 
 .warmBg {
     background-image: url('../assets/images/warm-bg.jpg');
+    height: 90vh;
     /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75)); */
-    height: 100vh;
+    /* background-size: cover; */
 }
 
 .display-content {
     color: black;
-    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.3);
     text-align: center;
-    background-color: white;
-    opacity: 0.2;
+    background:rgba(255, 255, 255, 0.3);;
     width: 50vw;
     border-radius: 15px 15px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 15px;
 }
